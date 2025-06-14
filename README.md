@@ -1,2 +1,2 @@
-# Telepresence-Enhanced Network Music Performance (TENeMP)
-This repository holds the sources of the TENeMP project homepage, available at https://mmlab-aueb.github.io/tenemp-site
+# avid-nmp site
+This repository holds the sources of the avid-nmp project homepage, available at https://mmlab-aueb.github.io/avid-nmp
