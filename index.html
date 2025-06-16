@@ -28,7 +28,7 @@
                 <strong>Adaptive Video Delivery for Network Music Performance for Network Music Performance (AViD-NMP)</strong>
             </div>
            <div style="text-align:center;" class="col-md-3">
-                <a href="https://6g-xr.eu/" target="_blank"><img src="img/cropped-6G-XR_logo_colored" width="204px" height="95" alt="6G-XR Logo" class="img-fluid"></a>
+                <a href="https://6g-xr.eu/" target="_blank"><img src="img/cropped-6G-XR_logo_colored.png" width="204px" height="95" alt="6G-XR Logo" class="img-fluid"></a>
             </div> 
         </div>
     </div>
@@ -52,13 +52,40 @@
         <p> The following scenarios will be evaluated:</p>
         <ol>
             <li>
-                Performance comparison of different NMP tools.
+                P2P with Native Rendering.
                 <ul>
                     <li>
-                        Assess feasibility of Network Music Performance (NMP) in 5G networks.
+                        Sender encodes XR stream.
                     </li>
                     <li>
-                        P2P transmissions / various musician placements.
+                        Stream is sent to each receiver independently.
+                    </li>
+                    <li>
+                        Receiver(s) decode each stream locally.
+                    </li>
+                    <li>
+                       Advantages:
+                    
+                    <ul>
+                        <li>
+                            Lowest possible latency
+                        </li>
+                         <li>
+                            No need for MEC services
+                        </li>
+                    </ul>
+                    </li>
+                    <li>
+                        Disadvantages:
+                   
+                    <ul>
+                        <li>
+                            Sender needs to send multiple streams
+                        </li>
+                         <li>
+                            Sender needs considerable processing power
+                        </li>
+                    </ul>
                     </li>
                 </ul>
             </li>
