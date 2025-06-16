@@ -93,18 +93,74 @@
                 Performance gains of edge-computing.
                 <ul>
                     <li>
-                        Can NMP benefit from the placement of an SFU server at the edge?
+                        Sender encodes XR stream.
+                    </li>
+                    <li>
+                        Stream is sent to SFU in MEC.
+                    </li>
+                    <li>
+                        SFU relays the stream to each participant.
+                    </li>
+                    <li>
+                        Receiver(s) decode each stream locally.
+                    </li>
+                    <li>
+                       Advantages:                    
+                    <ul>
+                        <li>
+                            Sender only needs to send a single stream
+                        </li>
+                    </ul>
+                    </li>
+                    <li>
+                        Disadvantages:                   
+                    <ul>
+                        <li>
+                            Additional latency to go through MEC
+                        </li>
+                         <li>
+                            Sender needs considerable processing power
+                        </li>
+                    </ul>
                     </li>
                 </ul>
             </li>
             <li>
-                Integration of future telepresence techniques in NMP tools.
+                SFU with Remote Rendering.
                 <ul>
                     <li>
-                        Integrate 3D streaming with NMP.
+                        Sender does NOT encode the XR stream.
                     </li>
                     <li>
-                        Assess the feasibility with and without SFU.
+                        Stream is sent to SFU in MEC.
+                    </li>
+                    <li>
+                        SFU encodes and relays the stream to each participant.
+                    </li>
+                    <li>
+                        Receiver(s) decode each stream locally.
+                    </li>
+                    <li>
+                       Advantages:                    
+                    <ul>
+                        <li>
+                            Sender only needs to send a single stream
+                        </li>
+                        <li>
+                            Sender does not need processing power
+                        </li>
+                        <li>
+                            SFU can adapt encoding depending on conditions
+                        </li>
+                    </ul>
+                    </li>
+                    <li>
+                        Disadvantages:                   
+                    <ul>
+                        <li>
+                            Additional latency to go through MEC
+                        </li>
+                    </ul>
                     </li>
                 </ul>
             </li>
